@@ -1,0 +1,7 @@
+gcc -Wall -g -fPIC -Iinclude -Iinternal -c src/tinysdl.c -o build/tinysdl.c.o
+src/tinysdl.c:67:13: warning: ‘flush_error’ defined but not used [-Wunused-function]
+   67 | static void flush_error(void)
+      |             ^~~~~~~~~~~
+gcc -Wall -g -fPIC -Iinclude -Iinternal -c src/main.c -o build/main.c.o
+gcc  build/tinysdl.c.o build/main.c.o -o bin/tinysdl -lsigcore -lX11
+make: *** [Makefile:58: run] Segmentation fault (core dumped)

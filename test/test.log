@@ -1,0 +1,18 @@
+gcc -Wall -g -fPIC -Iinclude -c test/test_interface.c -o build/test/test_interface.c.o
+gcc build/test/test_interface.c.o  build/tinysdl.c.o -o build/test/test_interface -lsigcore -lX11 -lsigtest -L/usr/lib
+Running test: test_window_create 
+[TinySDL] Video initialized: flags=1
+[TinySDL] Window=TinySDL Window {(0, 0)}|{(800, 600)} flags=1
+[TinySDL] Window destroyed
+[TinySDL] Quit
+[PASS]
+Running test: test_window_destroy_null 
+[TinySDL] Attempt to destroy null window
+[PASS]
+Running test: test_event_polling 
+[TinySDL] Video initialized: flags=1
+[TinySDL] Window=TinySDL Window {(0, 0)}|{(800, 600)} flags=1
+[TinySDL] Window destroyed
+[TinySDL] Quit
+[PASS]
+rm build/test/test_interface build/test/test_interface.c.o

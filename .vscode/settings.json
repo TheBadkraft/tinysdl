@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "sdl_sysvideo.h": "c",
+        "sdl_surface_c.h": "c",
+        "sdl_blit.h": "c",
+        "sdl_video.h": "c",
+        "tinysdl.h": "c",
+        "stdio.h": "c",
+        "xlib.h": "c",
+        "tinysdl_core.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "workbench.colorCustomizations": {
+        "editorLineNumber.foreground": "#daa520"
+    },
+    "editor.tabSize": 3
+}
